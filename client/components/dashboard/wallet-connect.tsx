@@ -23,8 +23,8 @@ export function WalletConnect() {
 
       // Mock successful connection
       setWalletStatus("connected")
-      setWalletAddress("iota1qpw6k49dedaxrt854rfsm2tdxjqvqgz0hg8yce8mz6g3g7f5g5jqvz0r85")
-      setWalletBalance("1,000 SMR")
+      setWalletAddress("0xbaf982831161779563e4f665a5c7b031101a8d087ba8ff23aea0a30832b177e6")
+      setWalletBalance("5 IOTA")
     } catch (error) {
       console.error("Error connecting wallet:", error)
       setWalletStatus("error")
