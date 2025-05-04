@@ -16,7 +16,7 @@
 
 ## How IOTA is Used
 
-Pulse integrates with the **IOTA Stardust Testnet** using the `@iota/sdk` library. All key activities—like project registration, carbon activity logging, and simulated credit minting—are written as messages to the **IOTA Tangle**.
+Pulse integrates with the **IOTA Rebased Testnet** using the `@iota/sdk` library. All key activities—like project registration, carbon activity logging, and simulated credit minting—are written as messages to the **IOTA Tangle**.
 
 Each message contains:
 - Project ID
@@ -53,18 +53,6 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## IOTA SDK Configuration
-
-Located in API route handlers:
-
-```ts
-const client = new Client({
-  nodes: ['https://api.testnet.iotaledger.net'],
-  localPow: true,
-})
-```
-> Make sure to use the **Nightly Wallet** with testnet funds to generate addresses or fund transactions.
-
 ## Key API Routes
 
 | Route               | Purpose                        |
@@ -81,5 +69,4 @@ After submitting an activity, retrieve the message ID and verify it at:
 ```txt
 https://iotascan.com/testnet/message/{messageId}
 ```
-
 > 🌍 Let’s make carbon tracking trustworthy and transparent for everyone — one immutable log at a time.
