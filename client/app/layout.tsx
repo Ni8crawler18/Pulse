@@ -7,9 +7,8 @@ import { ThemeProvider } from "@/components/theme-provider"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Pulse - Carbon Offset Project Management",
+  title: "Pulse",
   description: "Register projects, log carbon reduction activities, and mint carbon credit tokens on the IOTA network.",
-    generator: 'v0.dev'
 }
 
 export default function RootLayout({
